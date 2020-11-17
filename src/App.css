@@ -13,8 +13,24 @@
   }
 }
 
+body {
+  background-color: #173c85;
+  color: white;
+}
+
+.app-area {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.appCenterArea {
+  width: 80vw;
+  height: 100vh;
+}
+
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
