@@ -5,7 +5,7 @@ import './AllPlayers.css'
 
 function AllPlayers() {
   return (
-    <div className="allplayers-area">
+    <div className="allPlayers">
       <h4>Players</h4>
     </div>
   );
