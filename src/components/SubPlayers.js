@@ -1,5 +1,5 @@
 import React from 'react';
-import './SubPlayers.css'
+import './SubPlayers.scss'
 
 
 

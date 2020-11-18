@@ -1,6 +1,6 @@
 import React from 'react';
 import Field from './field';
-import './InitialPlayers.css'
+import './InitialPlayers.scss'
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './individualPlayer.css';
+import './individualPlayer.scss';
 
 
 
