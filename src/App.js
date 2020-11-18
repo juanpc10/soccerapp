@@ -30,9 +30,14 @@ function App() {
       <h2>React Team</h2>
       <AllPlayers playerImages={dummyData} />
       <InitialPlayers />
-      <SubPlayers />
+      <AllPlayers playerImages={dummyData} />
+      {/* <SubPlayers /> */}
     </div>
   );
 }
 
 export default App;
+
+
+
+// https://www.goal.com/en/lists/ballon-dor-2020-power-rankings/whcizarhekx113s80lap7bhcr#1129yb08fyb9l1agxq5hjtzk2h

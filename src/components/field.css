@@ -1,0 +1,63 @@
+
+
+.fieldArea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  width: 700px;
+  height: 80%;
+  background-image: url("https://media1.fdncms.com/stranger/imager/u/large/43193688/1584628468-gettyimages-1176781177.jpg");
+}
+
+
+.fieldPlayerss {
+  display: flex;
+  /* justify-content: flex-start; */
+  width: 100%;
+  height: 100%;
+}
+
+.goalKeeperArea {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+
+}
+
+.defenseArea {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.midfieldArea {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.strikersArea {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:  space-around;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.fieldPlayerss p {
+  background-color: red;
+}
