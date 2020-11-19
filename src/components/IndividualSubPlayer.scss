@@ -1,44 +1,14 @@
 
-.individualPlayerArea {
+
+.pictureSubXbutton {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 180px;
-  height: 180px;
-  margin-right: 80px;
+  justify-content: flex-end;
+  width: 100px;
 }
 
-.playerPictureArea {
-  width: 100px;
-  height: 100px;
+.pictureSubXbutton button {
+  background-color: red;
+  color: white;
+  border: none;
   border-radius: 50%;
-  overflow: hidden;
-}
-
-
-
-.playerPictureArea img {
-  width: 100px;
-  background-color: white;
-}
-
-.playerInfo {
-  display: flex;
-  flex-direction: column;
-}
-
-.playerName {
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-content: center;
-  margin-bottom: 30px;
-}
-
-.playerButtons {
-  display: flex;
-  justify-content: space-around;
-  width: 150px;
 }

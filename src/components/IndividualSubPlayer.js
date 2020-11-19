@@ -1,12 +1,14 @@
 import React from 'react';
-import './individualPlayer.scss';
+import './IndividualSubPlayer.scss';
 
 
 
 function IndividualPlayer(props) {
   return (
     <div className="individualPlayerArea">
-
+      <div className="pictureSubXbutton">
+        <button>x</button>
+      </div>
       <div className="playerPictureArea">
           <img src={props.playerImage}></img>
       </div>
