@@ -7,24 +7,105 @@ function Field() {
   return (
     <div className="fieldArea">
       <div className="fieldPlayerss">
+
         <div className="goalKeeperArea">
-          <p>as</p>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
         </div>
+
         <div className="defenseArea">
-          <p>as</p>
-          <p>as</p>
-          <p>as</p>
-          <p>as</p>
+        <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
         </div>
+
         <div className="midfieldArea">
-          <p>as</p>
-          <p>as</p>
-          <p>as</p>
+        <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
         </div>
+
         <div className="strikersArea">
-          <p>as</p>
-          <p>as</p>
-          <p>as</p>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
+          <div>
+            <div className="pictureXbutton">
+              <button>x</button>
+            </div>
+            <div className="fieldPictureArea">
+              <img src="https://s.hs-data.com/bilder/spieler/gross/119750.jpg"></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>

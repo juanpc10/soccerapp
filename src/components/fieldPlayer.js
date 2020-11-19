@@ -11,16 +11,6 @@ function IndividualPlayer(props) {
           <img src={props.playerImage}></img>
       </div>
 
-      <div className="playerInfo">
-        <div className="playerName">
-          <p>{props.playerName}</p>
-        </div>
-        <div className="playerButtons">
-          <button>Field</button>
-          <button>Sub</button>
-        </div>
-      </div>
-
     </div>
   );
 }

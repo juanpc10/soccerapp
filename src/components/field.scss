@@ -61,3 +61,30 @@
 .fieldPlayerss p {
   background-color: red;
 }
+
+
+.fieldPictureArea {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: aqua;
+}
+
+
+.pictureXbutton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pictureXbutton button {
+  background-color: red;
+  color:white;
+  border: none;
+  border-radius: 50%;
+}
+
+.fieldPictureArea img {
+  width: 50px;
+  background-color: white;
+}

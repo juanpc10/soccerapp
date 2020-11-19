@@ -16,8 +16,8 @@ function IndividualPlayer(props) {
           <p>{props.playerName}</p>
         </div>
         <div className="playerButtons">
-          <button>Field</button>
-          <button>Sub</button>
+          {/* <button>Field</button>
+          <button>Sub</button> */}
         </div>
       </div>
 
