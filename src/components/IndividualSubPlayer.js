@@ -9,8 +9,8 @@ function IndividualPlayer(props) {
       <div className="pictureSubXbutton">
         <button>x</button>
       </div>
-      <div className="playerPictureArea">
-          <img src={props.playerImage}></img>
+      <div className="subPlayerPictureArea">
+        <img src={props.playerImage}></img>
       </div>
 
       <div className="playerInfo">

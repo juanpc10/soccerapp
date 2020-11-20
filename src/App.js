@@ -27,7 +27,6 @@ function App() {
       <h2>React Team</h2>
       <AllPlayers playerData={dummyData} />
       <InitialPlayers playerData={dummyData} />
-      {/* <AllPlayers playerData={dummyData} /> */}
       <SubPlayers playerData={dummyData} />
     </div>
   );

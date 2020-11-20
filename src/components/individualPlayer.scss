@@ -42,3 +42,35 @@
   justify-content: space-around;
   width: 150px;
 }
+
+.fieldButton {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.fieldButton:hover {
+  cursor: pointer;
+  background-color: rgb(9, 165, 255);
+  // color: blue;
+}
+
+.fieldButton:focus {
+  outline: none;
+}
+
+.subButton {
+  background-color: white;
+  color: blue;
+  border: none;
+}
+
+.subButton:hover {
+  cursor: pointer;
+  background-color: rgb(9, 165, 255);
+  color: white;
+}
+
+.subButton:focus {
+  outline: none;
+}

@@ -7,8 +7,38 @@
 }
 
 .pictureSubXbutton button {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+
+.pictureSubXbutton button:hover {
   background-color: red;
   color: white;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.pictureSubXbutton button:focus {
+  outline: none;
+}
+
+
+.subPlayerPictureArea {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.subPlayerPictureArea img {
+  width: 100px;
+  background-color: white;
+}
+
+.subPlayerPictureArea:hover {
+  cursor: pointer;
 }
