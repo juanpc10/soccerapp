@@ -12,9 +12,12 @@ const initialState = {
     {image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2lVWfvYN52Vgd5xhpj1oPiCeSnTGmKouZgg&usqp=CAU", name: "Neymar da Silva"},
     {image: "https://png.pngitem.com/pimgs/s/97-975287_kevin-de-bruyne-profile-hd-png-download.png", name: "Kevin De Bruyne"},
     {image: "https://i.pinimg.com/564x/97/c6/0f/97c60f191093ac3e484883d147850e8c.jpg", name: "Kylian Mbappe"},
+  ],
+  fieldPlayers: [
     {image: "https://i.pinimg.com/474x/d4/2b/5f/d42b5ff73b004e64ebc6738e5045ebed.jpg", name: "Thomas Muller"},
     {image: "https://avatarfiles.alphacoders.com/240/240156.png", name: "Erling Haaland"},
-    {image: "https://assets.laliga.com/squad/2019/t186/p17861/512x512/p17861_t186_2019_1_003_000.png", name: "Sergio Ramos"}
+    {image: "https://assets.laliga.com/squad/2019/t186/p17861/512x512/p17861_t186_2019_1_003_000.png", name: "Sergio Ramos"},
+    
   ],
   subs: [],
 }
@@ -39,6 +42,18 @@ export const GlobalProvider = ({ children }) => {
       payload: i
     });
   }
+  function addFieldPlayer (fieldPlayer) {
+    dispatch({
+      type: 'ADD_FIELDPLAYER',
+      payload: fieldPlayer
+    });
+  }
+  function deleteFieldPlayer (i) {
+    dispatch({
+      type: 'DELETE_FIELDPLAYER',
+      payload: i
+    });
+  }
 
   function addToAllPlayers (allPlayers) {
     dispatch({
@@ -53,23 +68,9 @@ export const GlobalProvider = ({ children }) => {
       payload: i
     });
   }
-  // function deleteSingleEvent (singleEvent) {
-  //   dispatch({
-  //     type: 'delete_singleEvent',
-  //     payload: singleEvent
-  //   });
-  // }
-  // function editSingleEvent (singleEvent, index) {
-  //   dispatch({
-  //     type: 'edit_singleEvent',
-  //     payload: singleEvent,
-  //     editIndex: index
-  //   });
-  // }
   
   return  (
-    // <GlobalContext.Provider value={{ items: state.items, addSingleEvent, deleteSingleEvent, editSingleEvent}}>
-    <GlobalContext.Provider value={{ allPlayers: state.allPlayers, subs: state.subs, addSub, addToAllPlayers, deleteSub, deleteFromAllPlayers}}>
+    <GlobalContext.Provider value={{ allPlayers: state.allPlayers, fieldPlayers: state.fieldPlayers ,subs: state.subs, addSub, addToAllPlayers, deleteSub, deleteFromAllPlayers, addFieldPlayer, deleteFieldPlayer}}>
       {children}
     </GlobalContext.Provider>
   )

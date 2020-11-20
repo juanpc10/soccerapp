@@ -22,7 +22,7 @@ function IndividualSubPlayer(props) {
   return (
     <div className="individualPlayerArea">
       <div className="pictureSubXbutton">
-        <button onClick={() => clickDelete(i, allPlayersObj)   }>x</button>
+        <button onClick={() => clickDelete(i, allPlayersObj) }>x</button>
       </div>
       <div className="subPlayerPictureArea">
         <img src={props.playerImage}></img>

@@ -8,11 +8,21 @@ export default (state, action) => {
         ...state,
         subs: [action.payload, ...state.subs] 
       }
-
     case 'DELETE_SUB':
       return {
         ...state,
         subs: [...state.subs.slice(0, action.payload), ...state.subs.slice(action.payload + 1, state.length)]
+      }
+
+    case 'ADD_FIELDPLAYER':
+      return {
+        ...state,
+        fieldPlayers: [action.payload, ...state.fieldPlayers] 
+      }
+    case 'DELETE_FIELDPLAYER':
+      return {
+        ...state,
+        fieldPlayers: [...state.fieldPlayers.slice(0, action.payload), ...state.fieldPlayers.slice(action.payload + 1, state.length)]
       }
 
     case 'ADD_TOALLPLAYERS':
@@ -20,23 +30,11 @@ export default (state, action) => {
         ...state,
         allPlayers: [action.payload, ...state.allPlayers] 
       }
-    
     case 'DELETE_FROMALLPLAYERS':
       return {
         ...state,
         allPlayers: [...state.allPlayers.slice(0, action.payload), ...state.allPlayers.slice(action.payload + 1, state.length)]
       }
-
-    // case 'delete_singleEvent':
-    // return {
-    //   ...state,
-    //   items: [...state.items.slice(0, action.payload), ...state.items.slice(action.payload + 1, state.length)]
-    // }
-    // case 'edit_singleEvent':
-    // return {
-    //   ...state,
-    //   items: [...state.items.slice(0, action.editIndex), action.payload, ...state.items.slice(action.editIndex + 1, state.length)]
-    // }
 
     default:
       return state;

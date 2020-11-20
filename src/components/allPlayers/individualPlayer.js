@@ -7,13 +7,19 @@ import './individualPlayer.scss';
 
 function IndividualPlayer(props) {
 
-  const { addSub, deleteFromAllPlayers } = useContext(GlobalContext);
+  const { addFieldPlayer, addSub, deleteFromAllPlayers } = useContext(GlobalContext);
 
   let allPlayersObj = {};
   allPlayersObj.name = props.playerName;
   allPlayersObj.image= props.playerImage;
 
   let i = props.index;
+
+
+  const clickAddFieldPlayer = (index, obj) => {
+    addFieldPlayer(obj);
+    deleteFromAllPlayers(index);
+  }
 
   const clickAddSub = (index, obj) => {
     addSub(obj);
@@ -32,7 +38,7 @@ function IndividualPlayer(props) {
           <p>{props.playerName}</p>
         </div>
         <div className="playerButtons">
-          <button className="fieldButton">Field</button>
+          <button className="fieldButton" onClick={() => clickAddFieldPlayer(i, allPlayersObj)} >Field</button>
           <button className="subButton" onClick={() => clickAddSub(i, allPlayersObj)} >Sub</button>
         </div>
       </div>
