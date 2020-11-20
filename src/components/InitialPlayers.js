@@ -4,11 +4,11 @@ import './InitialPlayers.scss'
 
 
 
-function InitialPlayers() {
+function InitialPlayers(props) {
   return (
     <div className="initialPlayers">
       <h4>Initial Players</h4>
-      <Field />
+      <Field playerData={props.playerData} />
     </div>
   );
 }

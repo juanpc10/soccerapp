@@ -26,7 +26,7 @@ function App() {
     <div className="app-area">
       <h2>React Team</h2>
       <AllPlayers playerData={dummyData} />
-      <InitialPlayers />
+      <InitialPlayers playerData={dummyData} />
       {/* <AllPlayers playerData={dummyData} /> */}
       <SubPlayers playerData={dummyData} />
     </div>

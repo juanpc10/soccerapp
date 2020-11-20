@@ -5,12 +5,12 @@ import IndividualPlayer from './individualPlayer';
 
 
 function AllPlayers(props) {
-  let playerInfo = props.playerData;
+  let playerData = props.playerData;
   return (
     <div className="allPlayers">
       <h4>Players</h4>
       <div className="allPlayersArea">
-        {playerInfo.map(item => {
+        {playerData.map(item => {
           return (
             <IndividualPlayer playerImage={item.image} playerName={item.name} />
           )

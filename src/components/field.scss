@@ -3,7 +3,7 @@
 .fieldArea {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   margin: auto;
   width: 700px;
   height: 80%;
@@ -13,50 +13,49 @@
 
 .fieldPlayerss {
   display: flex;
-  /* justify-content: flex-start; */
-  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
   height: 100%;
 }
 
-.goalKeeperArea {
+.fieldPlayer0 {
   width: 120px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: aqua; */
-
 }
 
-.defenseArea {
+.fieldPlayer1, .fieldPlayer2, .fieldPlayer3, .fieldPlayer4 {
   width: 120px;
-  height: 100%;
+  height: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  /* background-color: aqua; */
+  justify-content: center;
 }
 
-.midfieldArea {
+.fieldPlayer5, .fieldPlayer6, .fieldPlayer7 {
   width: 120px;
-  height: 100%;
+  height: 33.33%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  /* background-color: aqua; */
+  justify-content: center;
 }
 
-.strikersArea {
+.fieldPlayer8, .fieldPlayer9, .fieldPlayer10 {
   width: 120px;
-  height: 100%;
+  height: 33.33%;
   display: flex;
   flex-direction: column;
-  justify-content:  space-around;
   align-items: center;
-  /* background-color: aqua; */
+  justify-content: center;
 }
+
+
 
 .fieldPlayerss p {
   background-color: red;
@@ -68,23 +67,75 @@
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: aqua;
+  background-color: white;
 }
 
+.fieldPictureArea:hover {
+  cursor: pointer;
+}
 
 .pictureXbutton {
   display: flex;
   justify-content: flex-end;
+  width: 50px;
 }
 
 .pictureXbutton button {
-  background-color: red;
-  color:white;
+  background-color: transparent;
+  color: transparent;
   border: none;
   border-radius: 50%;
 }
+
+.pictureXbutton button:hover {
+  cursor: pointer;
+  background-color: red;
+  color:white;
+}
+
+.pictureXbutton button:focus {
+  outline: none;
+}
+
+
 
 .fieldPictureArea img {
   width: 50px;
   background-color: white;
 }
+
+
+
+
+
+
+
+// .defenseArea {
+//   width: 120px;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   /* background-color: aqua; */
+// }
+
+// .midfieldArea {
+//   width: 120px;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   /* background-color: aqua; */
+// }
+
+// .strikersArea {
+//   width: 120px;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content:  space-around;
+//   align-items: center;
+//   /* background-color: aqua; */
+// }
