@@ -17,7 +17,7 @@ export default (state, action) => {
     case 'ADD_FIELDPLAYER':
       return {
         ...state,
-        fieldPlayers: [action.payload, ...state.fieldPlayers] 
+        fieldPlayers: [...state.fieldPlayers, action.payload] 
       }
     case 'DELETE_FIELDPLAYER':
       return {

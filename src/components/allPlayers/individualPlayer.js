@@ -7,7 +7,7 @@ import './individualPlayer.scss';
 
 function IndividualPlayer(props) {
 
-  const { addFieldPlayer, addSub, deleteFromAllPlayers } = useContext(GlobalContext);
+  const { fieldPlayers, addFieldPlayer, addSub, deleteFromAllPlayers } = useContext(GlobalContext);
 
   let allPlayersObj = {};
   allPlayersObj.name = props.playerName;
@@ -17,8 +17,13 @@ function IndividualPlayer(props) {
 
 
   const clickAddFieldPlayer = (index, obj) => {
-    addFieldPlayer(obj);
-    deleteFromAllPlayers(index);
+    if(fieldPlayers.length > 10) {
+      addSub(obj);
+      deleteFromAllPlayers(index);
+    } else {
+      addFieldPlayer(obj);
+      deleteFromAllPlayers(index);
+    }
   }
 
   const clickAddSub = (index, obj) => {
