@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  // transform: translateY(-25%);
 }
 
 .fieldPlayer1, .fieldPlayer2, .fieldPlayer3, .fieldPlayer4 {
@@ -35,6 +36,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  // transform: translateX(-50%);
 }
 
 .fieldPlayer5, .fieldPlayer6, .fieldPlayer7 {
@@ -44,6 +46,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  // transform: translateX(-50%);
 }
 
 .fieldPlayer8, .fieldPlayer9, .fieldPlayer10 {
