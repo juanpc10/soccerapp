@@ -6,6 +6,8 @@ import SubPlayers from './components/SubPlayers';
 
 
 
+import { GlobalProvider } from './context/globalState';
+
 
 let dummyData = [
   {image: "https://s.hs-data.com/bilder/spieler/gross/119750.jpg", name: "Robert Lewandowski"},
@@ -18,17 +20,19 @@ let dummyData = [
   {image: "https://i.pinimg.com/474x/d4/2b/5f/d42b5ff73b004e64ebc6738e5045ebed.jpg", name: "Thomas Muller"},
   {image: "https://avatarfiles.alphacoders.com/240/240156.png", name: "Erling Haaland"},
   {image: "https://assets.laliga.com/squad/2019/t186/p17861/512x512/p17861_t186_2019_1_003_000.png", name: "Sergio Ramos"}
-]
+];
 
 
 function App() {
   return (
-    <div className="app-area">
-      <h2>React Team</h2>
-      <AllPlayers playerData={dummyData} />
-      <InitialPlayers playerData={dummyData} />
-      <SubPlayers playerData={dummyData} />
-    </div>
+    <GlobalProvider>
+      <div className="app-area">
+        <h2>React Team</h2>
+        <AllPlayers playerData={dummyData} />
+        <InitialPlayers playerData={dummyData} />
+        <SubPlayers playerData={dummyData} />
+      </div>
+    </GlobalProvider>
   );
 }
 

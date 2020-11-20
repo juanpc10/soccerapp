@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalContext } from '../context/globalState';
 import './individualPlayer.scss';
 
 
 
+
 function IndividualPlayer(props) {
+
+  // const [transaction, handleChangeTransaction] = useState('');
+  const { addSub } = useContext(GlobalContext);
+
+  let subObject = {};
+  subObject.name = props.playerName;
+  subObject.image= props.playerName;
+
+  const clickHandler = e => {
+    addSub(subObject);
+  }
+
   return (
     <div className="individualPlayerArea">
 
@@ -17,7 +31,7 @@ function IndividualPlayer(props) {
         </div>
         <div className="playerButtons">
           <button className="fieldButton">Field</button>
-          <button className="subButton">Sub</button>
+          <button className="subButton" onClick={clickHandler} >Sub</button>
         </div>
       </div>
 

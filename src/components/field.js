@@ -6,8 +6,7 @@ import './field.scss'
 
 function Field(props) {
   let playerData = props.playerData;
-  console.log(playerData);
-
+  
   return (
     <div className="fieldArea">
       <div className="fieldPlayerss">
