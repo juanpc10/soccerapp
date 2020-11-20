@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import AllPlayers from './components/AllPlayers';
-import InitialPlayers from './components/InitialPlayers';
-import SubPlayers from './components/SubPlayers';
+import AllPlayers from './components/allPlayers/AllPlayers';
+import InitialPlayers from './components/initialPlayers/InitialPlayers';
+import SubPlayers from './components/subPlayers/SubPlayers';
 
 
 

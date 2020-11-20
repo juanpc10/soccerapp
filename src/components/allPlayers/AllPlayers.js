@@ -2,14 +2,11 @@ import React, { useContext } from 'react';
 import './AllPlayers.scss'
 import IndividualPlayer from './individualPlayer';
 
-import { GlobalContext } from '../context/globalState';
+import { GlobalContext } from '../../context/globalState';
 
 
-function AllPlayers(props) {
+function AllPlayers() {
   const { allPlayers } = useContext(GlobalContext);
-  console.log(allPlayers);
-  // console.log(allPlayers);
-  // let playerData = props.playerData;
 
   return (
     <div className="allPlayers">

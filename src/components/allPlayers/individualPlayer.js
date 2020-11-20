@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/globalState';
+import { GlobalContext } from '../../context/globalState';
 import './individualPlayer.scss';
 
 
@@ -7,7 +7,6 @@ import './individualPlayer.scss';
 
 function IndividualPlayer(props) {
 
-  // const [transaction, handleChangeTransaction] = useState('');
   const { addSub, deleteFromAllPlayers } = useContext(GlobalContext);
 
   let allPlayersObj = {};
@@ -16,9 +15,6 @@ function IndividualPlayer(props) {
 
   let i = props.index;
 
-  // const clickHandler = e => {
-  //   addSub(subObject);
-  // }
   const clickAddSub = (index, obj) => {
     addSub(obj);
     deleteFromAllPlayers(index);
@@ -37,7 +33,7 @@ function IndividualPlayer(props) {
         </div>
         <div className="playerButtons">
           <button className="fieldButton">Field</button>
-          <button className="subButton" onClick={() => clickAddSub(i, allPlayersObj)  } >Sub</button>
+          <button className="subButton" onClick={() => clickAddSub(i, allPlayersObj)} >Sub</button>
         </div>
       </div>
 

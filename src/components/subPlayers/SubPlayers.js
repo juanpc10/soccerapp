@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './SubPlayers.scss'
 import IndividualSubPlayer from './IndividualSubPlayer';
 
-import { GlobalContext } from '../context/globalState';
+import { GlobalContext } from '../../context/globalState';
 
 
 
