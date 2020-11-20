@@ -28,9 +28,12 @@ function App() {
     <GlobalProvider>
       <div className="app-area">
         <h2>React Team</h2>
-        <AllPlayers playerData={dummyData} />
+        <AllPlayers />
         <InitialPlayers playerData={dummyData} />
-        <SubPlayers playerData={dummyData} />
+        <SubPlayers />
+        {/* <AllPlayers playerData={dummyData} />
+        <InitialPlayers />
+        <SubPlayers playerData={dummyData} /> */}
       </div>
     </GlobalProvider>
   );

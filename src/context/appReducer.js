@@ -8,6 +8,25 @@ export default (state, action) => {
         ...state,
         subs: [action.payload, ...state.subs] 
       }
+
+    case 'DELETE_SUB':
+      return {
+        ...state,
+        subs: [...state.subs.slice(0, action.payload), ...state.subs.slice(action.payload + 1, state.length)]
+      }
+
+    case 'ADD_TOALLPLAYERS':
+      return {
+        ...state,
+        allPlayers: [action.payload, ...state.allPlayers] 
+      }
+    
+    case 'DELETE_FROMALLPLAYERS':
+      return {
+        ...state,
+        allPlayers: [...state.allPlayers.slice(0, action.payload), ...state.allPlayers.slice(action.payload + 1, state.length)]
+      }
+
     // case 'delete_singleEvent':
     // return {
     //   ...state,

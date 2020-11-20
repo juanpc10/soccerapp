@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalContext } from '../context/globalState';
 import './IndividualSubPlayer.scss';
 
 
 
-function IndividualPlayer(props) {
+function IndividualSubPlayer(props) {
+
+  const { addToAllPlayers, deleteSub } = useContext(GlobalContext);
+
+  let allPlayersObj = {};
+  allPlayersObj.name = props.playerName;
+  allPlayersObj.image= props.playerImage;
+
+  let i = props.index;
+
+  const clickDelete = (index, obj) => {
+    deleteSub(index);
+    addToAllPlayers(obj);
+  }
+
   return (
     <div className="individualPlayerArea">
       <div className="pictureSubXbutton">
-        <button>x</button>
+        <button onClick={() => clickDelete(i, allPlayersObj)   }>x</button>
       </div>
       <div className="subPlayerPictureArea">
         <img src={props.playerImage}></img>
@@ -27,4 +42,4 @@ function IndividualPlayer(props) {
   );
 }
 
-export default IndividualPlayer;
+export default IndividualSubPlayer;
