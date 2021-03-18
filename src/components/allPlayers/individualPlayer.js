@@ -35,7 +35,8 @@ function IndividualPlayer(props) {
     <div className="individualPlayerArea">
 
       <div className="playerPictureArea">
-          <img src={props.playerImage}></img>
+          {/* <img src={require('../../images/lewan.jpg')} alt='Lewan'></img> */}
+          <img src={props.playerImage} alt='Lewan'></img>
       </div>
 
       <div className="playerInfo">

@@ -5,6 +5,7 @@ import AppReducer from './appReducer';
 // Initial state
 const initialState = {
   allPlayers: [
+    // {image: "lewan.jpg", name: "Lewandawski"},
     {image: "https://png.pngitem.com/pimgs/s/651-6515481_alisson-png-2019-transparent-png.png", name: "Alisson Becker"},
     {image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD2z0uyT02HVlAWMWpvJW-YIk2yfh77VDyFg&usqp=CAU", name: "Manuel Neuer"},
     {image: "https://s.hs-data.com/bilder/spieler/gross/119750.jpg", name: "Robert Lewandowski"},
@@ -25,7 +26,7 @@ const initialState = {
     {image: "https://resources.premierleague.com/premierleague/photos/players/250x250/p110979.png", name: "Sadio Mane"},
     {image: "https://www.mancity.com/meta/media/hq4bjhgn/sterling_head-shoulders.png", name: "Raheem Sterling"},
     {image: "https://resources.premierleague.com/premierleague/photos/players/250x250/p56979.png", name: "Jordan Henderson"},
-    {image: "https://lh3.googleusercontent.com/proxy/pqFy3A8VwlY8HdoSZMjxWrTC5sAUTRPu6_yQpv6cobVorSkITWbs48n1z1MX4SrcZFVpzyxyZkZ4tTNj0erTBWsPEicOes61UblsfHBO2O_CmdMXnLPo11loE5_Z9CwtQKCGa6Sy8dofdJciiKluw5BXo0euobpYa-E", name: "Timo Werner"},
+    // {image: "https://lh3.googleusercontent.com/proxy/pqFy3A8VwlY8HdoSZMjxWrTC5sAUTRPu6_yQpv6cobVorSkITWbs48n1z1MX4SrcZFVpzyxyZkZ4tTNj0erTBWsPEicOes61UblsfHBO2O_CmdMXnLPo11loE5_Z9CwtQKCGa6Sy8dofdJciiKluw5BXo0euobpYa-E", name: "Timo Werner"},
   ],
   fieldPlayers: [],
   subs: [],
